@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Cameras | Nuraeye</title>
+    <meta name="description"
+        content="Explore Nuraeye's full range of AI-powered IP cameras — Bullet, PTZ, and Dome — built for intelligent, real-time surveillance.">
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <script src="../js/components.js"></script>
+
+    <style>
+        /* ── IP Camera page specific styles ── */
+        .ip-hero {
+            padding: 7rem 0 4rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .ip-hero-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--logo-blue, #5ce1e6);
+            background: rgba(92, 225, 230, 0.1);
+            border: 1px solid rgba(92, 225, 230, 0.25);
+            border-radius: 50px;
+            padding: 0.35rem 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .ip-hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--logo-blue, #5ce1e6), var(--logo-pink, #e65ce1));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .ip-hero-sub {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--text-muted, #9198a1);
+            line-height: 1.7;
+        }
+
+        /* Camera cards grid */
+        .cameras-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0 5rem;
+        }
+
+        .camera-card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.5rem 2rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            overflow: hidden;
+        }
+
+        .camera-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(92, 225, 230, 0.05), rgba(230, 92, 225, 0.05));
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .camera-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(92, 225, 230, 0.4);
+            box-shadow: 0 20px 60px rgba(92, 225, 230, 0.15);
+        }
+
+        .camera-card:hover::before {
+            opacity: 1;
+        }
+
+        .camera-card-img-wrap {
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .camera-card-img-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 18px rgba(92, 225, 230, 0.25));
+            transition: filter 0.35s ease, transform 0.35s ease;
+        }
+
+        .camera-card:hover .camera-card-img-wrap img {
+            filter: drop-shadow(0 0 30px rgba(92, 225, 230, 0.5));
+            transform: scale(1.05);
+        }
+
+        .camera-card-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-main, #e6edf3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .camera-card-desc {
+            font-size: 0.92rem;
+            color: var(--text-muted, #9198a1);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .camera-card-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--logo-blue, #5ce1e6);
+            margin-top: auto;
+            position: relative;
+            z-index: 1;
+            transition: gap 0.25s ease;
+        }
+
+        .camera-card:hover .camera-card-cta {
+            gap: 0.8rem;
+        }
+
+        /* Glow blobs behind hero */
+        .ip-glow-1 {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(92, 225, 230, 0.12) 0%, transparent 70%);
+            top: -100px;
+            left: -100px;
+            pointer-events: none;
+        }
+
+        .ip-glow-2 {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(230, 92, 225, 0.1) 0%, transparent 70%);
+            bottom: -50px;
+            right: -50px;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+
+            .ip-glow-1,
+            .ip-glow-2 {
+                width: 250px;
+                height: 250px;
+            }
+
+            .ip-glow-1 {
+                top: 0;
+                left: 0;
+            }
+
+            .ip-glow-2 {
+                bottom: 0;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <!-- Header Component -->
+    <app-header base-path=".."></app-header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section" style="position: relative; overflow: hidden;">
+            <div class="ip-glow-1"></div>
+            <div class="ip-glow-2"></div>
+
+            <div class="container">
+                <!-- Hero text -->
+                <div class="ip-hero">
+                    <span class="ip-hero-label">AI-Powered Surveillance</span>
+                    <h1 class="ip-hero-title">IP Cameras</h1>
+                    <p class="ip-hero-sub">
+                        Choose from our full lineup of intelligent IP cameras — engineered with EdgeAI technology
+                        to deliver real-time alerts, crystal-clear footage, and effortless management.
+                    </p>
+                </div>
+
+                <!-- Camera Cards -->
+                <div class="cameras-grid">
+
+                    <!-- Bullet Camera -->
+                    <a href="ai-bullet-camera.html" class="camera-card">
+                        <div class="camera-card-img-wrap">
+                            <img src="../pictures/Bullet_camera.png" alt="AI Bullet Camera">
+                        </div>
+                        <span class="camera-card-name">AI Bullet Camera</span>
+                        <p class="camera-card-desc">
+                            Ideal for long-range outdoor monitoring. IP66 weatherproof with 3MP HD,
+                            color night vision, and active defence alerts.
+                        </p>
+                        <span class="camera-card-cta">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+
+                    <!-- PTZ Camera -->
+                    <a href="ai-ptz-camera.html" class="camera-card">
+                        <div class="camera-card-img-wrap">
+                            <img src="../pictures/ptz.png" alt="AI PTZ Camera">
+                        </div>
+                        <span class="camera-card-name">AI PTZ Camera</span>
+                        <p class="camera-card-desc">
+                            Pan, tilt &amp; zoom across wide areas with auto-tracking. Perfect for
+                            large open spaces demanding full 360° situational awareness.
+                        </p>
+                        <span class="camera-card-cta">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+
+                    <!-- Dome Camera -->
+                    <a href="ai-dome-camera.html" class="camera-card">
+                        <div class="camera-card-img-wrap">
+                            <img src="../pictures/dome.png" alt="AI Dome Camera">
+                        </div>
+                        <span class="camera-card-name">AI Dome Camera</span>
+                        <p class="camera-card-desc">
+                            Discreet and vandal-resistant dome form factor. Designed for indoor
+                            environments, retail spaces, and entry-point monitoring.
+                        </p>
+                        <span class="camera-card-cta">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <!-- Footer Component -->
+    <app-footer base-path=".."></app-footer>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

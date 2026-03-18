@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Cameras | Nuraeye</title>
+    <meta name="description"
+        content="Explore Nuraeye's full range of AI-powered WiFi cameras — Bullet, PTZ, and Dome — wireless surveillance with EdgeAI technology.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../js/components.js"></script>
+
+    <style>
+        .wifi-hero {
+            padding: 7rem 0 4rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .wifi-hero-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--logo-blue);
+            background: rgba(92, 225, 230, 0.1);
+            border: 1px solid rgba(92, 225, 230, 0.25);
+            border-radius: 50px;
+            padding: 0.35rem 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .wifi-hero-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--logo-blue), var(--logo-pink));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .wifi-hero-sub {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        .cameras-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0 5rem;
+        }
+
+        .camera-card {
+            position: relative;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.5rem 2rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            overflow: hidden;
+        }
+
+        .camera-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(92, 225, 230, 0.4);
+            box-shadow: 0 20px 60px rgba(92, 225, 230, 0.15);
+        }
+
+        .camera-card-img-wrap {
+            width: 180px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .camera-card-img-wrap img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 18px rgba(92, 225, 230, 0.25));
+            transition: filter 0.35s ease, transform 0.35s ease;
+        }
+
+        .camera-card:hover .camera-card-img-wrap img {
+            filter: drop-shadow(0 0 30px rgba(92, 225, 230, 0.5));
+            transform: scale(1.05);
+        }
+
+        .camera-card-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-pure);
+        }
+
+        .camera-card-desc {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .camera-card-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--logo-blue);
+            margin-top: auto;
+            transition: gap 0.25s ease;
+        }
+
+        .camera-card:hover .camera-card-cta {
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Component -->
+    <app-header base-path=".."></app-header>
+
+    <main>
+        <section class="section" style="position: relative; overflow: hidden;">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+            <div class="container">
+                <div class="wifi-hero">
+                    <span class="wifi-hero-label">Wireless AI Surveillance</span>
+                    <h1 class="wifi-hero-title">WiFi Cameras</h1>
+                    <p class="wifi-hero-sub">Go completely cable-free with our full lineup of AI-powered WiFi cameras —
+                        dual-band wireless, EdgeAI on-device processing, and instant mobile alerts.</p>
+                </div>
+
+                <div class="cameras-grid">
+                    <a href="wifi-bullet-camera.html" class="camera-card">
+                        <div class="camera-card-img-wrap"><img src="../pictures/Bullet_camera.png" alt="WiFi Bullet Camera">
+                        </div>
+                        <span class="camera-card-name">WiFi Bullet Camera</span>
+                        <p class="camera-card-desc">Long-range wireless outdoor monitoring with IP66 weatherproofing,
+                            3MP HD, and active defence alerts.</p>
+                        <span class="camera-card-cta">View Details <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="wifi-ptz-camera.html" class="camera-card">
+                        <div class="camera-card-img-wrap"><img src="../pictures/ptz.png" alt="WiFi PTZ Camera"></div>
+                        <span class="camera-card-name">WiFi PTZ Camera</span>
+                        <p class="camera-card-desc">360° wireless pan-tilt-zoom with 18× optical zoom and AI
+                            auto-tracking — complete area coverage, no cables.</p>
+                        <span class="camera-card-cta">View Details <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="wifi-dome-camera.html" class="camera-card">
+                        <div class="camera-card-img-wrap"><img src="../pictures/dome.png" alt="WiFi Dome Camera"></div>
+                        <span class="camera-card-name">WiFi Dome Camera</span>
+                        <p class="camera-card-desc">Discreet vandal-resistant wireless dome for indoor spaces, retail,
+                            and entry-point monitoring.</p>
+                        <span class="camera-card-cta">View Details <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <app-footer base-path=".."></app-footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Bullet Camera | Nuraeye</title>
+    <meta name="description"
+        content="NuraEye WiFi Bullet Camera — wireless AI-powered outdoor surveillance with dual-band WiFi and EdgeAI technology.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../js/components.js"></script>
+</head>
+
+<body>
+    <!-- Header Component -->
+    <app-header base-path=".."></app-header>
+
+    <main>
+        <section class="section">
+            <div class="container" style="margin-top: 4rem;">
+                <div class="contact-split-grid" style="align-items: center;">
+                    <div style="z-index: 10;">
+                        <h1 class="section-title"
+                            style="margin-bottom: 1.5rem; text-align: left; background: linear-gradient(90deg, var(--logo-blue), var(--logo-pink)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                            Nuraeye Guardpro</h1>
+                        <p class="section-t"
+                            style="margin-bottom: 1.5rem; text-align: left; background: linear-gradient(90deg, var(--logo-blue), var(--logo-pink)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 20px;">
+                            WiFi Bullet Camera</p>
+                        <p class="about-lead" style="font-size: 1.2rem; line-height: 1.8; color: var(--text-main);">
+                            Nuraeye WiFi Bullet Camera brings AI-powered outdoor surveillance without the hassle of
+                            cables — dual-band WiFi, EdgeAI on-device processing, and instant alerts straight to your
+                            phone.
+                        </p>
+                    </div>
+                    <div class="product-gallery" style="position: relative; z-index: 10;">
+                        <!-- Thumbnails (Left side on desktop, bottom on mobile) -->
+                        <div class="product-thumbnails">
+                            <div class="thumbnail-item active" onclick="changeImage(this, '../pictures/Bullet_camera.png')">
+                                <img src="../pictures/Bullet_camera.png" alt="WiFi Bullet Camera View 1">
+                            </div>
+                            <!-- Swapping duplicates with other images -->
+                            <div class="thumbnail-item" onclick="changeImage(this, '../pictures/left_bullet.png')">
+                                <img src="../pictures/left_bullet.png" alt="WiFi Bullet Camera Smart City View">
+                            </div>
+                            <div class="thumbnail-item" onclick="changeImage(this, '../pictures/right_bullet.png')">
+                                <img src="../pictures/right_bullet.png" alt="WiFi Bullet Camera Retail View">
+                            </div>
+                            <div class="thumbnail-item" onclick="changeImage(this, '../pictures/front_bullet.png')">
+                                <img src="../pictures/front_bullet.png" alt="WiFi Bullet Camera Logistics View">
+                            </div>
+                        </div>
+
+                        <!-- Main Image (Right side on desktop, top on mobile) -->
+                        <div class="product-main-view">
+                            <img src="../pictures/Bullet_camera.png" alt="WiFi Bullet Camera" id="main-product-image"
+                                class="product-main-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div style="margin-bottom: 3rem; text-align: center;">
+                    <h2 class="section-title"
+                        style="background: linear-gradient(90deg, var(--logo-blue), var(--logo-pink)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Nuraeye Guardpro 2 MP AI Smart Security Camera</h2>
+                    <p class="about-lead" style="color: var(--logo-blue); font-weight: 500;">Advanced AI Surveillance
+                        for Smarter Security</p>
+                    <p
+                        style="color: var(--text-muted); max-width: 800px; margin: 1rem auto; line-height: 1.6; font-size: 1.1rem;">
+                        The Nuraeye’s Guardpro 2MP Smart Security Camera delivers powerful AI-driven monitoring with
+                        crystal-clear 2K resolution, intelligent detection, and full-color night vision. Designed for
+                        homes, offices, retail stores, and industrial facilities, it provides reliable, real-time
+                        security with instant alerts and remote access.
+                        <br><br>
+                        With advanced AI detection, two-way audio, cloud storage, and ONVIF compatibility, NuraEye
+                        ensures complete visibility and protection day and night.
+                    </p>
+                </div>
+
+                <div class="section-header text-center" style="margin-top: 5rem; margin-bottom: 3rem;">
+                    <h3 class="section-title" style="font-size: 2rem;">Key Features</h3>
+                </div>
+
+                <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <!-- Feature 1 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">hd</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">2 MP Ultra Full
+                            HD Video Clarity</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Capture every detail with 2560 × 1440
+                            resolution. The high-performance CMOS sensor provides sharp and clear images for accurate
+                            monitoring.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">psychology</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Smart AI
+                            Detection</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Intelligent AI
+                            technology detects important events in real time:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>Object & Motion Detection</li>
+                            <li>Person & Tracking</li>
+                            <li>Virtual line crossing & Zone intrusion</li>
+                            <li>Buzzer & Tamper Detection</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">notifications_active</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Smart Motion
+                            Alerts</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Receive instant notifications on your
+                            mobile device when suspicious activity is detected.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">wb_twilight</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Full Color
+                            Night Vision</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Sony Starvis 2
+                            sensor with built-in spotlights:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>850nm IR LEDs for night vision</li>
+                            <li>Dual spotlights for color night recording</li>
+                            <li>Clear visibility in low-light environments</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">panorama_wide_angle</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Wide Angle
+                            Coverage</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">113° diagonal
+                            FOV to monitor large areas with minimal blind spots:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>Focal Length: 3.18 mm</li>
+                            <li>Aperture: F1.61</li>
+                            <li>Horizontal FOV: 97°, Vertical FOV: 54°</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">record_voice_over</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Two-Way Audio
+                        </h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Built-in mic &
+                            speaker with noise cancellation. Ideal for:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>Speaking to visitors</li>
+                            <li>Warning intruders</li>
+                            <li>Communicating with staff remotely</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">cloud_done</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Smart Storage
+                            (1 TB)</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Flexible and
+                            secure storage options:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>MicroSD Card local storage</li>
+                            <li>Cloud storage using AWS Kinesis Streaming</li>
+                            <li>Remote playback and recording access</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">auto_awesome</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Advanced Image
+                            Enhancement</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Superior quality
+                            in difficult lighting:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>3D Digital Noise Reduction (3DNR)</li>
+                            <li>Wide Dynamic Range (WDR)</li>
+                            <li>AI Low-Light Image Enhancement</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 9 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">lock</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Secure &
+                            Encrypted</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Enterprise-grade
+                            protection:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>128-bit AES Encryption</li>
+                            <li>SSL/TLS secure communication</li>
+                            <li>Secure Boot Protection</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 10 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">shield</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Built for
+                            Outdoor Use</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Rugged design
+                            for challenging environments:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>IP66 Weatherproof rating</li>
+                            <li>Operating temp: -20°C to 45°C</li>
+                            <li>Durable housing for outdoor installations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Feature 11 -->
+                    <div class="feature-item" style="align-items: flex-start; text-align: left; padding: 2rem;">
+                        <span class="material-icons-outlined" style="margin-bottom: 1rem;">router</span>
+                        <h4 style="color: var(--text-pure); font-size: 1.25rem; margin-bottom: 0.75rem;">Connectivity &
+                            Integration</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">
+                            Industry-standard networking:</p>
+                        <ul
+                            style="color: var(--text-muted); font-size: 0.9rem; padding-left: 1.2rem; line-height: 1.5;">
+                            <li>10/100 Mbps RJ45 Ethernet port</li>
+                            <li>RTSP support for streaming</li>
+                            <li>ONVIF compatibility with NVR systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specifications Section -->
+        <section class="section" style="padding-top: 2rem; padding-bottom: 4rem;">
+            <div class="container">
+                <div class="section-header text-center"
+                    style="margin-bottom: 3rem; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                    <h3 class="section-title" style="font-size: 2rem;">Technical Specifications</h3>
+                    <a href="Nuraeye_Specifications.pdf" target="_blank"
+                        download="Nuraeye_Guardpro_4MP_Specifications.pdf" class="btn btn-primary"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.5rem; font-size: 1rem;">
+                        <i class="fas fa-file-pdf"></i> Download Specifications PDF
+                    </a>
+                </div>
+
+                <div class="spec-table-container glass-panel"
+                    style="overflow-x: auto; border-radius: var(--border-radius); padding: 2rem;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: left; color: var(--text-pure);">
+
+                        <!-- CAMERA -->
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                CAMERA</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; width: 35%; color: var(--text-muted); font-weight: 500;">Image
+                                Sensor</td>
+                            <td style="padding: 1rem;">1/3" Progressive Scan CMOS Sensor</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500; vertical-align: top;">
+                                Lens</td>
+                            <td style="padding: 1rem;">
+                                Focal Length: 3.18 mm<br>
+                                Aperture: F1.61<br>
+                                Field of View: 113°(Diagonal), 97°(Horizontal), 54°(Vertical)
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500; vertical-align: top;">
+                                Night Vision & Lighting</td>
+                            <td style="padding: 1rem;">
+                                850 nm IR LED<br>
+                                Full-Color Night Vision<br>
+                                Lighting: 2× Built-in Spotlights
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500; vertical-align: top;">
+                                Interface & Button</td>
+                            <td style="padding: 1rem;">
+                                1× Ethernet Port<br>
+                                1× RESET Button<br>
+                                1× MicroSD Card Slot
+                            </td>
+                        </tr>
+
+                        <!-- VIDEO & AUDIO -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                VIDEO & AUDIO</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Maximum Resolution
+                            </td>
+                            <td style="padding: 1rem;">2560 × 1440 px</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Frame Rate</td>
+                            <td style="padding: 1rem;">30 fps</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Video Compression
+                            </td>
+                            <td style="padding: 1rem;">H.264/H.265/MJPEG</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">On Screen Display
+                            </td>
+                            <td style="padding: 1rem;">Text, Image and DateTime</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Privacy Masks</td>
+                            <td style="padding: 1rem;">Yes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Live View</td>
+                            <td style="padding: 1rem;">Yes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500; vertical-align: top;">
+                                Image Enhancement</td>
+                            <td style="padding: 1rem;">3DNR<br>WDR</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Audio Input & Output
+                            </td>
+                            <td style="padding: 1rem;">Built-in Microphone and Speaker</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Audio Communication
+                            </td>
+                            <td style="padding: 1rem;">Two-Way Audio with Noise Cancellation</td>
+                        </tr>
+
+                        <!-- STORAGE -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                STORAGE</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Local Storage</td>
+                            <td style="padding: 1rem;">MicroSD Card Slot</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Cloud Storage</td>
+                            <td style="padding: 1rem;">AWS Kinesis Cloud Streaming and Storage</td>
+                        </tr>
+
+                        <!-- DETECTION and NOTIFICATIONS -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                DETECTION and NOTIFICATIONS</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500; vertical-align: top;">
+                                AI Detection</td>
+                            <td style="padding: 1rem;">
+                                Tamper Detection<br>
+                                Object Detection & Tracking<br>
+                                Face Detection & Face Recognition<br>
+                                AI based low-light image enhancement
+                            </td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Privacy Masks</td>
+                            <td style="padding: 1rem;">Yes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Activity Zones</td>
+                            <td style="padding: 1rem;">Yes</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Notification</td>
+                            <td style="padding: 1rem;">Configurable Alerts and Notifications</td>
+                        </tr>
+
+                        <!-- NETWORK -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                NETWORK</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Network Connectivity
+                            </td>
+                            <td style="padding: 1rem;">Ethernet</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Ethernet Port</td>
+                            <td style="padding: 1rem;">1× 10/100 Mbps RJ45 Port</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">RTSP</td>
+                            <td style="padding: 1rem;">Yes</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">ONVIF</td>
+                            <td style="padding: 1rem;">Yes</td>
+                        </tr>
+
+                        <!-- SECURITY -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                SECURITY</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500; vertical-align: top;">
+                                Security</td>
+                            <td style="padding: 1rem;">
+                                128-bit AES Encryption with SSL/TLS<br>
+                                Secure boot
+                            </td>
+                        </tr>
+
+                        <!-- POWER -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                POWER</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Power Source</td>
+                            <td style="padding: 1rem;">12V DC Power Adapter</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Input Voltage</td>
+                            <td style="padding: 1rem;">100-240 V, 50/60 Hz</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Output Voltage</td>
+                            <td style="padding: 1rem;">12 V, 0.8 A (DC Power)</td>
+                        </tr>
+
+                        <!-- GENERAL -->
+                        <tr
+                            style="border-bottom: 1px solid rgba(255,255,255,0.1); border-top: 2px solid rgba(255,255,255,0.1);">
+                            <th colspan="2" style="padding: 1.5rem 0 1rem; font-size: 1.2rem; color: var(--logo-blue);">
+                                GENERAL</th>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Weather Resistance
+                            </td>
+                            <td style="padding: 1rem;">IP66</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Operating Temperature
+                            </td>
+                            <td style="padding: 1rem;">-20°C~45°C</td>
+                        </tr>
+                        <tr style="border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Storage Temperature
+                            </td>
+                            <td style="padding: 1rem;">-20°C~60°C</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: var(--text-muted); font-weight: 500;">Certifications</td>
+                            <td style="padding: 1rem;">CE, FCC, RoHS, STQCI</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <app-footer base-path=".."></app-footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

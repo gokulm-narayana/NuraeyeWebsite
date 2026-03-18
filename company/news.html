@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In the News | NuraEye Systems</title>
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for mobile menu icon & other icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <script src="../js/components.js"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <!-- Header Component -->
+    <app-header base-path=".."></app-header>
+
+    <main>
+        <section class="section" style="padding-top: 7rem; position: relative; overflow: hidden;">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+            <div class="container" style="max-width: 800px;">
+                <div class="section-header text-center">
+
+                    <h1 class="section-title">In the News</h1>
+                    <p style="color: var(--text-muted); margin-top: 1rem;">Stay updated with the latest announcements,
+                        features, and press coverage of NuraEye Systems.</p>
+                </div>
+
+                <!-- News Search -->
+                <div class="news-section glass-panel">
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Search news and articles...">
+                        <button class="btn btn-primary search-btn">Search</button>
+                    </div>
+                </div>
+
+                <!-- Placeholder space for actual news articles later -->
+                <div
+                    style="margin-top: 4rem; text-align: center; color: var(--text-muted); padding: 4rem; border: 1px dashed rgba(255,255,255,0.1); border-radius: var(--border-radius);">
+                    <i class="far fa-newspaper" style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;"></i>
+                    <p>News articles and press releases will appear here.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <!-- Footer Component -->
+    <app-footer base-path=".."></app-footer>
+
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
